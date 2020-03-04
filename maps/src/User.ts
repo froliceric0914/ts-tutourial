@@ -3,10 +3,11 @@ import faker from 'faker';
 export class User {
   name: string;
   location: {
-    lat: number;
-    lng: number;
+    lat: number; // user.
+    lng: number; //user
   };
 
+  // declare the initial values
   constructor() {
     this.name = faker.name.firstName();
     this.location = {
